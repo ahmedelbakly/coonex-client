@@ -1,0 +1,260 @@
+.topbar-container{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  /* top: -100px;
+  z-index: 20; */
+  background-color: #fff;
+}
+
+.topbar-container .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 30px;
+  gap: 30px;
+}
+
+.topbar-container .up .logo {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.topbar-container .up .logo img {
+  align-items: left;
+  cursor: pointer;
+
+}
+
+.topbar-container .up .with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  text-align: center;
+}
+
+.topbar-container .up .with-icon .icon a {
+  font-size: 14px;
+  display: block;
+  text-transform: capitalize;
+}
+
+.topbar-container .up .buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-left: 1px solid #E2E2E2;
+  padding-left: 25px;
+}
+
+
+.topbar-container .up .buttons .lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.topbar-container .up .buttons .lang button {
+
+  border: none;
+  display: block;
+
+}
+
+.topbar-container .down {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.topbar-container .down a {
+  font-size: 16px;
+}
+
+.topbar-container .down a:hover {
+  color: #199956;
+}
+
+
+.nameAvatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.topbar-responsive {
+  display: none;
+}
+
+.topbar-responsive .top-res {
+  color: rgb(4, 4, 4) !important;
+  background: white !important;
+  box-shadow: none;
+}
+
+.topbar-responsive .logo-res {
+  width: 100px;
+  height: 30px;
+}
+
+.topbar-responsive .tool-res {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-list {
+  position: fixed;
+  width: 0px;
+  min-width: 0px;
+  height: calc(100vh);
+  z-index: 40000;
+  background-color: rgb(251, 251, 251);
+  padding: 20px 20px;
+  padding-top: 40px;
+  top: 0px;
+  left: -50px ;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: none;
+  box-shadow: 0 0 10px black;
+
+
+
+}
+.show-menu {
+  width: 40%;
+  min-width: 350px;
+  left: 0;
+}
+
+.menu-list .down {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  padding-top: 15px;
+  flex-direction: column;
+  padding-bottom: 30px;
+  border-bottom: solid 2px #E2E2E2;
+}
+
+.menu-list .down a {
+  display:block;
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.menu-list .down a:hover {
+  background-color: #199956;
+  color: white;
+
+}
+.menu-list .up {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #E2E2E2;
+  padding-bottom: 30px;
+  gap: 20px;
+  flex-direction: column;
+  padding-top: 30px;
+}
+
+.menu-list .with-icon {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  text-align: center;
+  flex-direction: column;
+  padding-left: 15px;
+}
+
+.menu-list .with-icon .icon {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  text-align: center;
+
+}
+
+.menu-list .up .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  border-left: 1px solid #E2E2E2;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menu-list .buttons .lang {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5px;
+  padding-left: 15px;
+
+}
+
+.menu-list .close {
+  position: absolute;
+  top: 25px;
+  right: 15px;
+  font-size: 25px;
+}
+
+.menu-list .adsButton {
+  position: absolute;
+  bottom: 8px;
+  left: 20px;
+  width: 90%;
+  font-size: 25px;
+  margin: auto;
+  background: #ffffff;
+  color: black;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: all 0.5s;
+  padding: 0px 20px;
+  text-transform: capitalize !important;
+  border: solid 1px black;
+ 
+
+
+}
+
+.menu-list .adsButton:hover {
+  background: #199956;
+  color: #fff;
+}
+
+@media only screen and (max-width: 920px) {
+
+  .topbar-container {
+    display: none;
+  }
+
+  .topbar-responsive {
+    display: block;
+  }
+
+  .menu-list {
+    display: block;
+  }
+}

@@ -1,0 +1,115 @@
+.home-page {
+  position: relative;
+}
+.home-page .banner-text {
+  position: absolute;
+  color: #fff;
+  text-align: center;
+  top: 40%;
+  z-index: 5;
+  width: 700px;
+  height: 300px;
+  line-height: 30px; /* 187.5% */
+}
+
+.home-page .banner-text h2 {
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 40px; /* 100% */
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.home-page .banner-text p {
+  opacity: 0.87;
+  width: 626px;
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  text-align: center;
+  margin: auto;
+  line-height: 30px; /* 187.5% */
+}
+
+.home-page .searchConRes {
+  display: none !important;
+}
+
+@media only screen and (max-width: 920px) {
+  .home-page {
+    padding: 30px 40px;
+  }
+  .home-page .banner-text {
+    top: 25% !important;
+  }
+  .home-page .banner-text h2 {
+    font-size: 24px;
+  }
+  .home-page .banner-text p {
+    font-size: 16px;
+    max-width: 500px;
+    max-width: 400px;
+    margin: auto;
+  }
+  .home-page .tow-button {
+
+    top: 50%!important;
+  }
+
+  .home-page .searchCon {
+    display: none!important;
+  }
+  .home-page .searchConRes {
+    display: flex!important;
+  }
+  .home-page .card {
+    width: 100% !important;
+  }
+  .home-page .swiper .arrow {
+    display: none;
+  }
+  
+}
+@media only screen and (max-width: 600px) {
+  .home-page {
+    padding: 30px 0px!important;
+  }
+  .home-page .banner-text {
+    top: 25% !important;
+  }
+  .home-page .banner-text h2 {
+    font-size: 20px;
+  }
+  .home-page .banner-text p {
+    font-size: 16px;
+   
+    max-width: 350px;
+    margin: auto;
+  }
+  .home-page .tow-button {
+
+    top: 50%!important;
+  }
+
+  .home-page .searchCon {
+    display: none!important;
+  }
+  .home-page .searchConRes {
+    display: flex!important;
+  }
+  .home-page .card {
+    width: 100% !important;
+  }
+  .home-page .item-container {
+   padding: 10px!important;
+  }
+  .home-page .item-container .title{
+    font-size: 16px !important;
+  }
+  
+
+}

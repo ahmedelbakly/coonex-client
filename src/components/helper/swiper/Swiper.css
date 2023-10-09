@@ -1,0 +1,15 @@
+.Swiper .items-show {
+    overflow-x: hidden!important;
+}
+
+
+
+@media only screen and (max-width: 912px) {
+    .Swiper  .items-show {
+        overflow-x: scroll!important;
+    }
+    .swiper .items-show  button{
+     font-size: 12px;
+     min-width: 150px !important;
+    }
+}

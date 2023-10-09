@@ -1,0 +1,11 @@
+@media only screen and (max-width: 912px) {
+   .item-container .items-show {
+        overflow-x: scroll!important;
+    }
+    .item-container  .swiper .items-show  button{
+     font-size: 12px;
+     min-width: 140px !important;
+    }
+   
+    
+}

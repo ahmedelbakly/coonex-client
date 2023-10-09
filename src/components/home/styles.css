@@ -1,0 +1,33 @@
+
+.banner-home .active{
+background-color: #199956;
+color: #fff;
+}
+
+.banner-home .active::after {
+  content: "" !important;
+  border-top: 20px solid #199956 !important;
+  border-left: 10px solid transparent !important;
+  border-right: 10px solid transparent !important;
+  top: 99% !important;
+  left: 35% !important;
+
+  position: absolute !important;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 920px) {
+.banner-home .banner-text h2 {
+ font: size 24px;   
+}
+.banner-home .tow-button {
+
+  top: 40%!important;
+}
+    }
