@@ -100,15 +100,15 @@ const AdvertisePageRent = () => {
   //////////////////////////////////////////////////////////////////////////////
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("ads", JSON.stringify(productRentData));
-    formData.append("logo", file);
-    files &&
-      Object.values(files).map((file, index) =>
-        formData.append("proImg", file)
-      );
+    // const formData = new FormData();
+    // formData.append("ads", JSON.stringify(productRentData));
+    // formData.append("logo", file);
+    // files &&
+    //   Object.values(files).map((file, index) =>
+    //     formData.append("proImg", file)
+    //   );
     axiosExpire
-      .post("https://coonex-server.vercel.app/api/adRent", formData)
+      .post("https://coonex-server.vercel.app/api/adRent",productRentData )
       .then(function (response) {
         const data = response.data;
         if (data.error) {

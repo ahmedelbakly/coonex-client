@@ -65,16 +65,16 @@ const AdvertisePageSale = () => {
   //////////////////////////////////////////////////////////////////////////////
   const handleSubmit = (e) => {
     e.preventDefault();
-    const formData = new FormData();
-    formData.append("ads", JSON.stringify(productSaleData));
-    formData.append("logo", file);
-    files &&
-      Object.values(files).map((file, index) =>
-        formData.append("proImg", file)
-      );
+    // const formData = new FormData();
+    // formData.append("ads", JSON.stringify(productSaleData));
+    // formData.append("logo", file);
+    // files &&
+    //   Object.values(files).map((file, index) =>
+    //     formData.append("proImg", file)
+    //   );
       console.log("productSaleData",productSaleData);
     axiosExpire
-      .post("https://coonex-server.vercel.app/api/adSale", formData)
+      .post("https://coonex-server.vercel.app/api/adSale", productSaleData)
       .then(function (response) {
         const data = response.data;
         console.log("111111111111111111111111111",data);
@@ -187,3 +187,18 @@ export default AdvertisePageSale;
    */
 
 /////////////////////////////////////////////////////
+
+
+/* 
+
+const formData = new FormData();
+    formData.append("ads", JSON.stringify(productSaleData));
+    formData.append("logo", file);
+    files &&
+      Object.values(files).map((file, index) =>
+        formData.append("proImg", file)
+      );
+
+
+
+*/
