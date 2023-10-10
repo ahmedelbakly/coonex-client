@@ -29,7 +29,7 @@ const Login = () => {
     }
    
     axios
-      .post("http://localhost:3001/user/login", loginData)
+      .post("https://coonex-server.vercel.app/api/user/login", loginData)
       .then(function (response) {
         const data = response.data;
         if (data.error) {

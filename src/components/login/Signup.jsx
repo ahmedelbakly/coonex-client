@@ -34,7 +34,7 @@ const SignUp = () => {
     }
     console.log(signData);
     axios
-      .post("http://localhost:3001/user", signData)
+      .post("https://coonex-server.vercel.app/api/user", signData)
       .then(function (response) {
         const data = response.data;
         if (data.error) {

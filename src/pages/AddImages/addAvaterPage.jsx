@@ -70,10 +70,12 @@ const AddAvatarPage = () => {
     const formData = new FormData();
     formData.append("img", file);
     formData.append("id", localStorage.getItem("coonexUId"));
+    console.log(file,localStorage.getItem("coonexUId"));
     axios
-      .post("http://localhost:3001/user/avatar", formData)
+      .post("https://coonex-server.vercel.app/api/user/avatar", formData)
       .then((res) => {
         const data = res.data;
+        console.log(data);
         dispatch(loginUser(data));
         navigate("/profile")
       }).catch((err) => console.error(err));

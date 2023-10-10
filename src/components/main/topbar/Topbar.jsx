@@ -74,7 +74,7 @@ const Topbar = ({ lang, handelChangeLang }) => {
             <div className="nameAvatar">
               <Avatar
                 alt=""
-                src={`http://localhost:3001/images/${user.image}`}
+                src={`https://coonex-server.vercel.app/images/${user.image}`}
               />
               <AccountMenu
                 username={user.username}

@@ -72,8 +72,9 @@ const AdvertisePageSale = () => {
       Object.values(files).map((file, index) =>
         formData.append("proImg", file)
       );
+      console.log("productSaleData",productSaleData);
     axiosExpire
-      .post("http://localhost:3001/adSale", formData)
+      .post("http://localhost:3001/api/adSale", formData)
       .then(function (response) {
         const data = response.data;
         console.log("111111111111111111111111111",data);

@@ -66,7 +66,7 @@ const SearchBar = ({ top,route }) => {
       }
     });
     axios
-      .post(`http://localhost:3001/${route}`, searchData)
+      .post(`https://coonex-server.vercel.app/api/${route}`, searchData)
       .then(function (response) {
         const data = response.data;
         if (data.error) {

@@ -63,7 +63,7 @@ function App() {
   //************************************************************************************** */
   const getUser = () => {
     axios
-      .post("http://localhost:3001/getUser",{id:""}, {
+      .post("https://coonex-server.vercel.app/api/getUser",{id:""}, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("reToken")}`,
         },
@@ -86,7 +86,7 @@ function App() {
   //************************************************************************************** */
   const getProduct = () => {
     axios
-      .get("http://localhost:3001/getProduct", {
+      .get("https://coonex-server.vercel.app/api/getProduct", {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("reToken")}`,
         },

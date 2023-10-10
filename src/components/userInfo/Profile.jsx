@@ -174,7 +174,7 @@ const Profile = () => {
       
     }
     axiosExpire
-      .patch("http://localhost:3001/user", userData, {
+      .patch("https://coonex-server.vercel.app/api/user", userData, {
         headers: {
           Authorization: localStorage.getItem("token"),
         },
@@ -217,7 +217,7 @@ if ( userPassData.password.length < 8) {
   
 
     axiosExpire
-      .patch("http://localhost:3001/user/pass", userPassData, {
+      .patch("https://coonex-server.vercel.app/api/user/pass", userPassData, {
         headers: {
           Authorization: localStorage.getItem("token"),
         },
@@ -244,22 +244,9 @@ if ( userPassData.password.length < 8) {
 
   const [img, setImg] = useState("");
 
-  const handleChangeImg = (e) => {
-    if (e.target.files) {
-      setImg(e.target.files[0]);
-    }
-  };
+  
 
-  const handleUpload = () => {
-    const formData = new FormData();
-    formData.append("img", img);
-    axios
-      .post("http://localhost:3001/user/img", formData)
-      .then((res) => res.json())
-      .then((data) => console.log(data))
-      .catch((err) => console.error(err));
-    setImg("");
-  };
+  
   //////////////////////////////////////////////////////////////////////////////////////////
 
   //////////////////////////////////////////////////////////////////////////////////////////
@@ -272,7 +259,7 @@ if ( userPassData.password.length < 8) {
   return (
     <>
     <ImageCon >
-        <img src={`http://localhost:3001/images/${user.image}`} alt="" />
+        <img src={`https://coonex-server.vercel.app/static/images/${user.image}`} alt="" />
         <div className="conICon">
           <BsCamera className="icon" onClick={() => handleLink("/avatar")} />
         </div>
