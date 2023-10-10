@@ -108,7 +108,7 @@ const AdvertisePageRent = () => {
         formData.append("proImg", file)
       );
     axiosExpire
-      .post("http://localhost:3001/api/adRent", formData)
+      .post("https://coonex-server.vercel.app/api/adRent", formData)
       .then(function (response) {
         const data = response.data;
         if (data.error) {

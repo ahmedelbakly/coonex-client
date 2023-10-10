@@ -74,7 +74,7 @@ const AdvertisePageSale = () => {
       );
       console.log("productSaleData",productSaleData);
     axiosExpire
-      .post("http://localhost:3001/api/adSale", formData)
+      .post("https://coonex-server.vercel.app/api/adSale", formData)
       .then(function (response) {
         const data = response.data;
         console.log("111111111111111111111111111",data);
